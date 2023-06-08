@@ -11,3 +11,6 @@
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
+
+## js
+* validação Pattern e Regex
