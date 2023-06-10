@@ -14,3 +14,9 @@
 
 ## js
 * validação Pattern e Regex
+* validação do primeior digito 
+(somatorio = 8! digitos * 10!),
+*resultado = somatorio * 10 % 11 se 11 ou 10 entao somatorio =0 se nao resultado  
+
+* Usando JavaScript nativamente, sem o uso de bibliotecas, iremos precisar fazer algumas validações manualmente, como a validação do CPF/
+Primeiro dígito/Segundo dígito

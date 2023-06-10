@@ -1,9 +1,7 @@
 import cpfValido from "./validacao-cpf.js";
-console.log("italo");
+import ehMaiorDeIdade from "./validacao-idade.js"
 const submit = document.querySelector("[data-formulario]");
-const obrigatorio = document.querySelectorAll("[required]");
-console.log(obrigatorio);
-
+console.log(submit);
 submit.addEventListener("submit", (e) => {
   e.preventDefault();
   //event.target permite identificar o elemento específico que acionou um evento
@@ -17,6 +15,10 @@ submit.addEventListener("submit", (e) => {
   console.log(e.target.termos.value);
 });
 
+
+const obrigatorio = document.querySelectorAll("[required]");
+console.log(obrigatorio);
+
 obrigatorio.forEach((campo) => {
   // blur -> sair do cammpo do input em questao
   // usar a função call back precisar passar o parametro ou usar o event
@@ -24,12 +26,16 @@ obrigatorio.forEach((campo) => {
 });
 
 function campoVerifica(elemento) {
-console.log(elemento);
+console.log(elemento);  
 console.log(elemento.name);
         if(elemento.name == "cpf" && elemento.value.length  >= "11"){
              //um cpf com numero necesario 
             cpfValido(elemento)
         }
+        if(elemento.name == "aniversario" && elemento.value != ""){
+            //um cpf com numero necesario 
+            ehMaiorDeIdade(elemento)
+       }
 }
 
 function campoVerifica2(elemento) {
