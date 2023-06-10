@@ -20,3 +20,6 @@
 
 * Usando JavaScript nativamente, sem o uso de bibliotecas, iremos precisar fazer algumas validações manualmente, como a validação do CPF/
 Primeiro dígito/Segundo dígito
+
+* validação de  idade
+* mensagem
