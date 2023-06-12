@@ -1,3 +1,4 @@
+// validaçaõ e regra de negocio atribuido a erro customError
 export default function cpfValido(cpfElemento) {
   const cpf = cpfElemento.value.replace(/\.|-/g, "");
   const recebeValidacao1 = primeiroDigidoValidacaoCPF(cpf);
@@ -13,9 +14,7 @@ export default function cpfValido(cpfElemento) {
   // if normal
   if (primeiroDigidoValidacaoCPF(cpf) ||segundoDigidoValidacaoCPF(cpf) ||cpfRepetido(cpf)) {
     // se algum retornar true é que achou um erro na logica de requisitos
-    console.log("Nao exite");
-  } else {
-    console.log("exite");
+      cpfElemento.setCustomValidity("Esse cpf nao exite")
   }
 }
 // bloco de logica em function
