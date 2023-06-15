@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoniBank - Página inicial</title>
+    <title>ItaloBank - Página inicial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -44,7 +44,7 @@
     </header>
 
     <section class="banner">
-        <h3 class="banner__titulo">Moniconta é o primeiro passo para a liberdade financeira!</h3>
+        <h3 class="banner__titulo">Italoconta é o primeiro passo para a liberdade financeira!</h3>
     </section>
 
     <main class="container">
@@ -63,12 +63,36 @@
                 <img src="../img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
                     data-video-botao class="formulario__imagem">
 
+
+
                 <div class="formulario__camera" data-camera>
-                    <video width="320" height="240" autoplay data-video></video>
+                    <video width="320" height="240" autoplay data-video>
+                    </video>
+                    <br>
                     <button class='camera__botao' data-tirar-foto>Tirar foto</button>
                 </div>
+                <span class="formulario__camera" data-mensagem="semCamera">w
+                    <img src="/img/Gato.png" alt="gatinho de erro">
+                </span>
 
-                <div class="formulario__mensagem" data-mensagem>
+            <!--
+                <div class="formulario__camera" data-camera2>
+                    <input name="myFile" id="myFile" type="file" accept="image/png,image/jpeg"/>
+                    <button class='camera__botao' data-salvar-foto2>pegar foto</button>
+                </div>
+                <div>
+                    <img src="" data-foto-preview alt="mminha foto">
+                </div>
+                
+            -->
+                <div>
+                    <input name="img-input" id="img-input" type="file"  accept="image/png,image/jpeg" >
+                </div>
+                <div>
+                    <img id="preview" src="">
+                </div>
+
+                <div class="formulario__mensagem" data-mensagem="canvas">
                     <canvas width="320" height="240" data-video-canvas></canvas>
                     <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
                     <p>Prontinho, imagem capturada!</p>
@@ -135,6 +159,7 @@
             <h2 class="rodape__logo"><span class="rodape__logo--negrito">Moni</span>Bank</h2>
         </section>
     </footer>
+    <script src="/js/camera.js" type="text/javascript"></script>
 </body>
 
 </html>

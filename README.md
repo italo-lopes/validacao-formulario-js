@@ -22,4 +22,6 @@
 Primeiro dígito/Segundo dígito
 * validação de  idade / cpf
 * mensagem de erro utilizando o Validity pra erros padrao e custom 
+* MidiaStream /canvas
 * Utilização do localStorage pra salvar os dados do navegador no banco de dado. localStorage.setItem()
+
